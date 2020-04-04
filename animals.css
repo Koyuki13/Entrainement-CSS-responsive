@@ -1,0 +1,35 @@
+.animaux{
+    display: flex; /*pour les mettres a la lignes les uns a la suite des autres*/
+    flex-wrap: wrap; /*pour aller à la ligne automatiquement pour les éléments*/
+    justify-content: space-around; /*les éléments s'affichent avec un espace égal entre eux*/
+}
+
+.animaux figure{ /*pour mettre toutes les images de la même taille. permet de fixer une taille pour les balises figure*/
+    width: 400px;
+    position: relative; /* pour que figcaption le prenne comme élément parent le plus proche*/
+    box-shadow: 0 0 4px var(--shadow-color);
+}
+
+.animaux figure img{ /*pour dire à l'image de ne pas dépasser*/
+    width: 100%; /*par rapport a ton conteneur parents je veux qu'il fasse 100%de la taille. les % se mettent en fonction de la balise parent*/
+    height: 400px;
+    object-fit: cover;/*permet de tronquer l'image mais sans la déformer*/
+    /*object-position: top; fonctionne avec object-fit pour lui dire de privilégier le haut de l'image et de tronquer le bas*/
+}
+.animaux figcaption{
+    font-family: var(--title-font); 
+    font-size: 20pt;
+    font-weight: bold; /*pour afficher ce qu'il y a dans la balise figcaption en gras*/
+    position: absolute; /* si on le met seul il va s'aligner par rapport a l'élément parent le plus proche en l'occurance body pour que l'élément soit positionner par rapport au parent le plus, proche, il faut mettre le figurne en position relative*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--transparent-dark);
+    color: var(--light);
+    display: flex;/*pour aligner le texte verticalement et horizontalement a combiner avec le justify content et le align items*/
+    justify-content: center;
+    align-items: center;
+}
+.animaux figure:hover figcaption{ /*pour faire disparaitre le texte quand on passe la souris sur l'image. dabord mettre un hover sur l'élément figure qui est au dessus et ensuite lui dire qu'on veut que cela s'applique sur le figcaption*/
+    display: none;
+}

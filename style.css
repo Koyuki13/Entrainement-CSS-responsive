@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2|Inter&display=swap');
+@import 'navbar.css';
+@import 'animals.css';
+
+:root{
+    --main-color:rgb(218, 131, 131);
+    --dark: rgb(22, 9, 9); /*couleur qui se rapproche du noir*/
+    --transparent-dark: rgba(22, 9, 9, 0.5);
+    --light: rgb(250, 237, 237); /*couleur qui se rapprocche du blanc*/
+    --shadow-color: grey;
+
+    --main-font: 'Inter', sans-serif;
+    --title-font: 'Baloo 2', cursive;
+
+    --padding-sm: calc(var(--padding) / 2); /* --padding-sm: 8px;*/
+    --padding: 16px;
+    --padding-lg: calc(var(--padding) * 2); /* --padding-lg: 32px;*/
+
+}
+
+body{
+    font-family: var(--main-font);
+    font-size: 14pt;
+    margin: 0; /*pour eviter un espace avec le haut de la barre*/
+}
+
+h1, h2{
+    font-family: var(--title-font); 
+}
+
+h1{
+    font-size: 24pt;
+}
+
+
+main{
+    padding: 16px;
+}

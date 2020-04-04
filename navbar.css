@@ -1,0 +1,59 @@
+.navbar{
+    display: flex; /*pour aligner la navbar*/
+    background-color: var(--dark);
+    height: 70px;
+    justify-content: space-between; /*de part et d'autre*/
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--light);
+}
+
+.links a{
+    color: var(--light);
+    text-decoration: none; /*ils ne sont plus soulign"é par défaut*/
+    font-size: 18pt;
+}
+
+.links a:hover{ /*lorsque l'on passe le curseur sur les liens*/
+    color: var(--main-color);
+}
+
+.navbar .logo{
+    font-size: 24pt;
+    display: flex; /*display flex et align items center pour aligner le logo et l'ecriture*/
+    align-items: center;
+}
+
+.navbar .logo img{
+    width: 62px; /*dans la class navbar qui est dans la class logo qui s'applique a l'image*/
+    padding-right: 8px; /*pour espacer le texte de la photo*/
+}
+.menu{
+    display: none; /*on veut qu'il apparaisse uniquement en media query*/
+    color: var(--light);
+}
+
+
+@media screen and (max-width:600px){
+    .links {
+        display: none;
+    }
+    .links:target{
+        display: flex; /*quand les liens de la div links sont ciblé il doivent réaparaitre dans le menu au moment ou l'on clique*/
+        position: fixed; /*toujours au même endroit sur la page même quand on scroll*/
+        width: 100vw; /*vw et vh vont se mettre par rapport à la taille de l'écran*/
+        height: 100vh;
+        background-color: var(--dark);
+        flex-direction: column;
+        z-index: 2; /*pour dire de passer par dessus un élément*/
+        color: var(--light);
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        display: block;
+    }
+}

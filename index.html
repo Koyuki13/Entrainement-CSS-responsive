@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!--! et tabulation pour générer le code de base-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrainement CSS/HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo"/>
+                Animal pictures
+            </div>
+            <div class="links" id="links">
+                <a href="#">Animal</a> <!--a*3 pour mettre direct 3liens-->
+                <a href="#">Campus</a>
+                <a href="#">Team</a>
+            </div>
+            <a class="menu" href="#links">Menu</a> <!--on met un encre links avec un id qu'on remet dans le menu pour dire qu'on veut que ses liens s'afficahnt dans le menu avec le css-->
+        </nav>
+    </header>
+
+    <main>
+        <section>
+        <h1>Animals Trombi</h1> <!--obligatoire de mettre un h1 pour le référencement du site. Ne mettre que un seul h1 par site-->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est beatae dolor eveniet error, 
+            nostrum ab id at impedit pariatur non dolorem numquam sint sit aspernatur quia dignissimos quisquam soluta excepturi.
+        </p>
+        </section>
+        <section>
+            <h2>Animals</h2>
+            <div class="animaux"> <!--div est le conteneur qui va contenir les différentes photos-->
+                <figure>
+                    <img src="images/photo1.jpg" alt="photo d'un chien"/>
+                    <figcaption>Youki</figcaption> <!--fonctionne avec la balise figure figcaption demande la légende de la figure-->
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="photo d'un renard"/>
+                    <figcaption>Rox</figcaption> <!--fonctionne avec la balise figure figcaption demande la légende de la figure-->
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="photo d'un chien de traineau"/>
+                    <figcaption>Des chiens de traineau</figcaption> <!--fonctionne avec la balise figure figcaption demande la légende de la figure-->
+                </figure>
+                <figure>
+                    <img src="images/photo4.jpg" alt="photo d'un chat"/>
+                    <figcaption>Miaou</figcaption> <!--fonctionne avec la balise figure figcaption demande la légende de la figure-->
+                </figure>
+                <figure>
+                    <img src="images/photo5.jpg" alt="photo d'un fauve"/>
+                    <figcaption>Simba</figcaption> <!--fonctionne avec la balise figure figcaption demande la légende de la figure-->
+                </figure>
+                <figure>
+                    <img src="images/photo6.jpg" alt="photo de pandas roux"/>
+                    <figcaption>Pandas roux</figcaption> <!--fonctionne avec la balise figure figcaption demande la légende de la figure-->
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
